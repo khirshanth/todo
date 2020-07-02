@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/khirshanth/todo.git/static/css/main.84400a23.chunk.css",
+    "main.js": "/khirshanth/todo.git/static/js/main.7ffb7625.chunk.js",
+    "main.js.map": "/khirshanth/todo.git/static/js/main.7ffb7625.chunk.js.map",
+    "runtime-main.js": "/khirshanth/todo.git/static/js/runtime-main.738cfb6b.js",
+    "runtime-main.js.map": "/khirshanth/todo.git/static/js/runtime-main.738cfb6b.js.map",
+    "static/js/2.a7271bd7.chunk.js": "/khirshanth/todo.git/static/js/2.a7271bd7.chunk.js",
+    "static/js/2.a7271bd7.chunk.js.map": "/khirshanth/todo.git/static/js/2.a7271bd7.chunk.js.map",
+    "index.html": "/khirshanth/todo.git/index.html",
+    "precache-manifest.709fd1066ddbba94679c51bbd40eb515.js": "/khirshanth/todo.git/precache-manifest.709fd1066ddbba94679c51bbd40eb515.js",
+    "service-worker.js": "/khirshanth/todo.git/service-worker.js",
+    "static/css/main.84400a23.chunk.css.map": "/khirshanth/todo.git/static/css/main.84400a23.chunk.css.map",
+    "static/js/2.a7271bd7.chunk.js.LICENSE.txt": "/khirshanth/todo.git/static/js/2.a7271bd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.738cfb6b.js",
+    "static/js/2.a7271bd7.chunk.js",
+    "static/css/main.84400a23.chunk.css",
+    "static/js/main.7ffb7625.chunk.js"
+  ]
+}
