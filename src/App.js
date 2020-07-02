@@ -10,7 +10,7 @@ class App extends React.Component{
     super(props)
        this.state={
          items:[],
-         a:'',
+         
          currentItems:{
          text:"",
         key:"",
@@ -36,7 +36,7 @@ class App extends React.Component{
        e.preventDefault()
        const newItem=this.state.currentItems
        const newItems=[...this.state.items,newItem]
-       if(this.state.currentItems.text == ""){
+       if(this.state.currentItems.text === ""){
           
        }else{
        this.setState({
@@ -57,8 +57,8 @@ class App extends React.Component{
   changeStateData(index, text){
     const item = this.state.items[index]
     item.text=text
-    const items = this.state.items.filter((item, i) => i !== index)
-    items[index] = item
+    const items = this.state.items.filter((index, i) => i !== index)
+    items[index]=item
     this.setState({
       items
     })
