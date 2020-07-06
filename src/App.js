@@ -16,14 +16,21 @@ class App extends React.Component{
         key:"",
         
       }
-      
+     
     }
+    
     this.handleInput=this.handleInput.bind(this)
     this.addItem=this.addItem.bind(this)
     this.handleClick=this.handleClick.bind(this)
     this.changeStateData = this.changeStateData.bind(this)
     this.clearAll=this.clearAll.bind(this)
   }
+  componentWillMount(){
+     localStorage.getItem("items") && this.setState({
+      items:JSON.parse( localStorage.getItem("items"))
+    })
+  }
+ 
   handleInput(event){
     this.setState({currentItems:{
       text:event.target.value,
@@ -36,6 +43,7 @@ class App extends React.Component{
        e.preventDefault()
        const newItem=this.state.currentItems
        const newItems=[...this.state.items,newItem]
+       
        if(this.state.currentItems.text === ""){
           
        }else{
@@ -47,7 +55,9 @@ class App extends React.Component{
           }
         
        })
+       
        } 
+       
   }
   handleClick(key){
         const items=this.state.items.filter(item => item.key !== key)
@@ -71,6 +81,10 @@ class App extends React.Component{
       })
       
     }
+    componentWillUpdate(prevprops,prevstate){
+      localStorage.setItem("items",JSON.stringify(prevstate.items))
+    }
+   
    
              
   render(){
